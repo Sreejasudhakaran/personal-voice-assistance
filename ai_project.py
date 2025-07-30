@@ -24,7 +24,7 @@ except Exception as e:
     sys.exit()
 
 def talk(text):
-    print("🎙️ GIRI:", text)
+    print("🎙️ NOVA:", text)
     try:
         engine.say(text)
         engine.runAndWait()
@@ -50,7 +50,7 @@ def take_command():
         talk("Unexpected error occurred.")
     return ""
 
-def run_giri():
+def run_nova():
     global memory
     command = take_command()
 
@@ -163,4 +163,4 @@ def run_giri():
 # 💬 Startup greeting
 talk("Yo! I'm sreeja's personal voice assistant. What can I do for you?")
 while True:
-    run_giri()
+    run_nova()
